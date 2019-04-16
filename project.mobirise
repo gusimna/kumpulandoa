@@ -1,0 +1,102 @@
+{
+  "settings": {
+    "name": "Site-04-16_1337",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#149dcc",
+        "secondaryColor": "#ff3366",
+        "successColor": "#F7ED4A",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Rubik",
+        "display1Size": 4.25,
+        "display2Font": "Rubik",
+        "display2Size": 3,
+        "display5Font": "Rubik",
+        "display5Size": 1.5,
+        "display7Font": "Rubik",
+        "display7Size": 1,
+        "display4Font": "Rubik",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#5b0e0e"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "4.9.7",
+    "siteFonts": [],
+    "uniqCompNum": 2,
+    "versionPublish": "4.9.7",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "KUMPULAN DOA",
+        "meta_descr": "Kumpulan Bacaan Doa yang diambil dari Ayat-Ayat Suci alQuran alKarim",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            }
+          },
+          "_name": "content5",
+          "_customHTML": "<section class=\"mbr-section content5\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/mbr-1-1920x1162.jpg\" selected parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#0f7699\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center mbr-bold mbr-white pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\">\n                    KUMPULAN DOA</h2>\n                <h3 mbr-if=\"showSubtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\">Berdo’alah kepada Rabbmu dengan berendah diri dan suara yang lembut. Sesungguhnya Allah tidak menyukai orang-orang yang melampaui batas. <br>[al-A’raf/7 : 55]</h3>\n                <p class=\"mbr-text align-center mbr-white pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" mbr-if=\"showText\" mbr-article data-multiline>\n                    Shape your future web project with sharp design and refine coded functions\n                </p>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.co\">LEARN MORE</a>\n                    <a class=\"btn btn-white-outline\" href=\"https://mobirise.co\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rnMG9sHg23",
+          "_anchor": "content5-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section-subtitle": {
+              "color": "#232323",
+              "text-align": "right"
+            },
+            ".mbr-section-subtitle DIV": {
+              "text-align": "right"
+            },
+            "H2": {
+              "color": "#5b0e0e"
+            }
+          },
+          "_name": "content4",
+          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#efefef\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\">ادْعُوا رَبَّكُمْ تَضَرُّعًا وَخُفْيَةً ۚ إِنَّهُ لَا يُحِبُّ الْمُعْتَدِينَ</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-2\"><div>01</div><div>رَبَّنَا تَقَبَّلْ مِنَّآ&nbsp; ۖ&nbsp; إِنَّكَ أَنتَ ٱلسَّمِيعُ ٱلْعَلِيمُ</div><div><span style=\"font-size: 3rem;\">(2-Al-Baqara : 127)</span><br></div><div><br></div><div>02</div><div>وَتُبْ عَلَيْنَآ&nbsp; ۖ&nbsp; إِنَّكَ أَنتَ ٱلتَّوَّابُ ٱلرَّحِيمُ</div><div><span style=\"font-size: 3rem;\">(2-Al-Baqara : 128)</span><br></div><div><br></div><div>03</div><div>رَبَّنَآ ءَاتِنَا فِى ٱلدُّنْيَا حَسَنَةً وَفِى ٱلْءَاخِرَةِ حَسَنَةً وَقِنَا عَذَابَ ٱلنَّارِ</div><div><span style=\"font-size: 3rem;\">(2-Al-Baqara : 201)</span><br></div><div><br></div><div>04</div><div>سَمِعْنَا وَأَطَعْنَا&nbsp; ۖ&nbsp; غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ ٱلْمَصِيرُ</div><div><span style=\"font-size: 3rem;\">(2-Al-Baqara : 285)</span><br></div><div><br></div><div>05</div><div>رَبَّنَا لَا تُؤَاخِذْنَآ إِن نَّسِينَآ أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَآ إِصْرًا كَمَا حَمَلْتَهُۥ عَلَى ٱلَّذِينَ مِن قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِۦ ۖ&nbsp; وَٱعْفُ عَنَّا وَٱغْفِرْ لَنَا وَٱرْحَمْنَآ ۚ&nbsp; أَنتَ مَوْلٰٮنَا فَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَٰفِرِينَ</div><div><span style=\"font-size: 3rem;\">(2-Al-Baqara : 286)</span><br></div><div><br></div><div>06</div><div>رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ&nbsp; إِنَّكَ أَنتَ ٱلْوَهَّابُ</div><div><span style=\"font-size: 3rem;\">(3-Al Imran : 8)</span><br></div><div><br></div><div>07</div><div>رَبَّنَآ إِنَّنَآ ءَامَنَّا فَٱغْفِرْ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ ٱلنَّارِ</div><div><span style=\"font-size: 3rem;\">(3-Al Imran : 16)</span><br></div><div><br></div><div>08</div><div>رَبِّ هَبْ لِى مِن لَّدُنكَ ذُرِّيَّةً طَيِّبَةً&nbsp; ۖ&nbsp; إِنَّكَ سَمِيعُ ٱلدُّعَآءِ</div><div><span style=\"font-size: 3rem;\">(3-Al Imran : 38)</span><br></div><div><br></div><div>09</div><div>رَبَّنَآ ءَامَنَّا بِمَآ أَنزَلْتَ وَٱتَّبَعْنَا ٱلرَّسُولَ فَٱكْتُبْنَا مَعَ ٱلشَّٰهِدِينَ</div><div><span style=\"font-size: 3rem;\">(3-Al Imran : 53)</span><br></div><div><br></div><div>10</div><div>رَبَّنَا ٱغْفِرْ لَنَا ذُنُوبَنَا وَإِسْرَافَنَا فِىٓ أَمْرِنَا وَثَبِّتْ أَقْدَامَنَا وَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَٰفِرِينَ</div><div><span style=\"font-size: 3rem;\">(3-Al Imran : 147)</span><br></div><div><br></div><div>11</div><div>رَبَّنَا مَا خَلَقْتَ هَٰذَا بَٰطِلًا سُبْحَٰنَكَ فَقِنَا عَذَابَ ٱلنَّارِ</div><div>رَبَّنَاۤ اِنَّكَ مَنْ تُدْخِلِ النَّارَ فَقَدْ اَخْزَيْتَهٗ&nbsp;&nbsp; ۗ&nbsp; وَمَا لِلظّٰلِمِيْنَ مِنْ اَنْصَارٍ</div><div>رَبَّنَاۤ اِنَّنَا سَمِعْنَا مُنَادِيًا يُّنَادِيْ لِلْاِيْمَانِ اَنْ اٰمِنُوْا بِرَبِّكُمْ فَاٰمَنَّا&nbsp;&nbsp;&nbsp; ۖ&nbsp; رَبَّنَا فَاغْفِرْ لَنَا ذُنُوْبَنَا وَكَفِّرْ عَنَّا سَيِّاٰتِنَا وَتَوَفَّنَا مَعَ الْاَبْرَارِ&nbsp; ۚ&nbsp;</div><div>رَبَّنَا وَاٰتِنَا مَا وَعَدتَّنَا عَلٰى رُسُلِكَ وَلَا تُخْزِنَا يَوْمَ الْقِيٰمَةِ&nbsp;&nbsp; ۗ&nbsp; اِنَّكَ لَا تُخْلِفُ الْمِيْعَادَ</div><div><span style=\"font-size: 3rem;\">(3-Al Imran : 191, 192, 193, 194)</span><br></div><div><br></div><div>12</div><div>رَبَّنَآ ءَامَنَّا فَٱكْتُبْنَا مَعَ ٱلشَّٰهِدِينَ</div><div><span style=\"font-size: 3rem;\">(5-Al-Ma'ida : 83)</span><br></div><div><br></div><div>13</div><div>رَبَّنَا ظَلَمْنَآ أَنفُسَنَا وَإِن لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ ٱلْخَٰسِرِينَ</div><div><span style=\"font-size: 3rem;\">(7-Al-A'raf : 23)</span><br></div><div><br></div><div>14</div><div>رَبَّنَا لَا تَجْعَلْنَا مَعَ الْقَوْمِ الظّٰلِمِيْنَ&nbsp;</div><div><span style=\"font-size: 3rem;\">(7-Al-A'raf : 47)</span><br></div><div><br></div><div>15</div><div>اللّٰهُمَّ اَنْتَ وَلِيُّنَا فَاغْفِرْ لَـنَا وَارْحَمْنَا&nbsp; وَاَنْتَ خَيْرُ الْغَافِرِيْنَ</div><div>وَاكْتُبْ لَـنَا فِيْ هٰذِهِ الدُّنْيَا حَسَنَةً وَّفِى الْاٰخِرَةِ</div><div><span style=\"font-size: 3rem;\">(7-Al-A'raf : 155, 156)</span><br></div><div><br></div><div>16</div><div>حَسْبِىَ ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ&nbsp; ۖ&nbsp; عَلَيْهِ تَوَكَّلْتُ&nbsp; ۖ&nbsp; وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيمِ</div><div><span style=\"font-size: 3rem;\">(9-At-Tawba : 129)</span><br></div><div><br></div><div>17</div><div>رَبَّنَا لَا تَجْعَلْنَا فِتْنَةً لِّلْقَوْمِ ٱلظَّٰلِمِينَ</div><div>وَنَجِّنَا بِرَحْمَتِكَ مِنَ&nbsp; الْقَوْمِ الْكٰفِرِيْنَ</div><div><span style=\"font-size: 3rem;\">(10-Yunus : 85, 86)</span><br></div><div><br></div><div>18</div><div>رَبِّ إِنِّىٓ أَعُوذُ بِكَ أَنْ أَسْـَٔلَكَ مَا لَيْسَ لِى بِهِۦ عِلْمٌ&nbsp; ۖ&nbsp; وَإِلَّا تَغْفِرْ لِى وَتَرْحَمْنِىٓ أَكُن مِّنَ ٱلْخَٰسِرِينَ</div><div><span style=\"font-size: 3rem;\">(11-Hud : 47)</span><br></div><div><br></div><div>19</div><div>اللّٰهُمَّ يَا فَاطِرَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ أَنتَ وَلِىِّۦ فِى ٱلدُّنْيَا وَٱلْءَاخِرَة ِ ۖ&nbsp; تَوَفَّنِى مُسْلِمًا وَأَلْحِقْنِى بِٱلصَّٰلِحِينَ</div><div><span style=\"font-size: 3rem;\">(12-Yusuf : 101)</span><br></div><div><br></div><div>20</div><div>رَبِّ ٱجْعَلْ هَٰذَا ٱلْبَلَدَ ءَامِنًا وَٱجْنُبْنِى وَبَنِىَّ أَن نَّعْبُدَ ٱلْأَصْنَامَ</div><div><span style=\"font-size: 3rem;\">(14-Ibrahim : 35)</span><br></div><div><br></div><div>21</div><div>رَبِّ ٱجْعَلْنِى مُقِيمَ ٱلصَّلَوٰةِ وَمِن ذُرِّيَّتِى ۚ رَبَّنَا وَتَقَبَّلْ دُعَآءِ</div><div><span style=\"font-size: 3rem;\">(14-Ibrahim : 40)</span><br></div><div><br></div><div>22</div><div>رَبَّنَا ٱغْفِرْ لِى وَلِوَٰلِدَىَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ ٱلْحِسَابُ</div><div><span style=\"font-size: 3rem;\">(14-Ibrahim : 41)</span><br></div><div><br></div><div>23</div><div>رَبَّنَآ ءَاتِنَا مِن لَّدُنكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًا</div><div><span style=\"font-size: 3rem;\">(18-Al-Kahf : 10)</span><br></div><div><br></div><div>24</div><div>رَبِّ ٱشْرَحْ لِى صَدْرِى</div><div>وَيَسِّرْ لِيْۤ اَمْرِيْ ۙ&nbsp;</div><div>وَاحْلُلْ عُقْدَةً مِّنْ لِّسَانِیْ&nbsp; ۙ&nbsp;</div><div>يَفْقَهُوْا قَوْلِیْ&nbsp; ۖ &nbsp;</div><div><span style=\"font-size: 3rem;\">(20-Ta-Ha : 25, 26, 27, 28)</span><br></div><div><br></div><div>25</div><div>رَبِّ زِدْنِى عِلْمًا</div><div><span style=\"font-size: 3rem;\">(20-Ta-Ha : 114)</span><br></div><div><br></div><div>26</div><div>لَآ إِلَٰهَ إِلَّآ أَنتَ سُبْحَٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّٰلِمِينَ</div><div><span style=\"font-size: 3rem;\">(21-Al-Anbiya : 87)</span><br></div><div><br></div><div>27</div><div>رَبِّ لَا تَذَرْنِى فَرْدًا وَأَنتَ خَيْرُ ٱلْوَٰرِثِينَ</div><div><span style=\"font-size: 3rem;\">(21-Al-Anbiya : 89)</span><br></div><div><br></div><div>28</div><div>رَبِّ أَعُوذُ بِكَ مِنْ هَمَزَٰتِ ٱلشَّيَٰطِينِ</div><div>وَاَعُوْذُ بِكَ&nbsp; رَبِّ اَنْ يَّحْضُرُوْنِ</div><div><span style=\"font-size: 3rem;\">(23-Al-Mu'minoon : 97, 98)</span><br></div><div><br></div><div>29</div><div>رَبَّنَآ ءَامَنَّا فَٱغْفِرْ لَنَا وَٱرْحَمْنَا وَأَنتَ خَيْرُ ٱلرَّٰحِمِينَ</div><div><span style=\"font-size: 3rem;\">(23-Al-Mu'minoon : 109)</span><br></div><div><br></div><div>30</div><div>رَبِّ ٱغْفِرْ وَٱرْحَمْ وَأَنتَ خَيْرُ ٱلرَّٰحِمِينَ</div><div><span style=\"font-size: 3rem;\">(23-Al-Mu'minoon : 118)</span><br></div><div><br></div><div>31</div><div>رَبَّنَا ٱصْرِفْ عَنَّا عَذَابَ جَهَنَّمَ ۖ&nbsp; إِنَّ عَذَابَهَا كَانَ غَرَامًا</div><div>اِنَّهَا سَآءَتْ&nbsp; مُسْتَقَرًّا وَّمُقَامًا</div><div><span style=\"font-size: 3rem;\">(25-Al-Furqan : 65, 66)</span><br></div><div><br></div><div>32</div><div>رَبَّنَا هَبْ لَنَا مِنْ أَزْوَٰجِنَا وَذُرِّيَّٰتِنَا قُرَّةَ أَعْيُنٍ وَٱجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا</div><div><span style=\"font-size: 3rem;\">(25-Al-Furqan : 74)</span><br></div><div><br></div><div>33</div><div>رَبِّ هَبْ لِى حُكْمًا وَأَلْحِقْنِى بِٱلصَّٰلِحِينَ</div><div>وَاجْعَلْ لِّيْ لِسَانَ صِدْقٍ فِى الْاٰخِرِيْنَ ۙ&nbsp;</div><div>وَاجْعَلْنِيْ مِنْ&nbsp; وَّرَثَةِ جَنَّةِ النَّعِيْمِ ۙ&nbsp;</div><div><span style=\"font-size: 3rem;\">(26-Ash-Shu'ara : 83, 84, 85)</span><br></div><div><br></div><div>34</div><div>وَلَا تُخْزِنِى يَوْمَ يُبْعَثُونَ</div><div>يَوْمَ لَا يَنْفَعُ مَالٌ وَّلَا بَنُوْنَ ۙ &nbsp;</div><div>اِلَّا&nbsp; مَنْ اَتَى اللّٰهَ بِقَلْبٍ سَلِيْمٍ ۗ&nbsp;</div><div><span style=\"font-size: 3rem;\">(26-Ash-Shu'ara : 87, 88, 88)</span><br></div><div><br></div><div>35</div><div>رَبِّ أَوْزِعْنِىٓ أَنْ أَشْكُرَ نِعْمَتَكَ ٱلَّتِىٓ أَنْعَمْتَ عَلَىَّ وَعَلَىٰ وَٰلِدَىَّ وَأَنْ أَعْمَلَ صَٰلِحًا تَرْضٰٮهُ وَأَدْخِلْنِى بِرَحْمَتِكَ فِى عِبَادِكَ ٱلصَّٰلِحِينَ</div><div><span style=\"font-size: 3rem;\">(27-An-Naml : 19)</span><br></div><div><br></div><div>36</div><div>رَبِّ إِنِّى ظَلَمْتُ نَفْسِى فَٱغْفِرْ لِى</div><div><span style=\"font-size: 3rem;\">(28-Al-Qasas : 16)</span><br></div><div><br></div><div>37</div><div>رَبِّ نَجِّنِى مِنَ ٱلْقَوْمِ ٱلظَّٰلِمِينَ</div><div><span style=\"font-size: 3rem;\">(28-Al-Qasas : 21)</span><br></div><div><br></div><div>38</div><div>عَسَىٰ رَبِّىٓ أَن يَهْدِيَنِى سَوَآءَ ٱلسَّبِيلِ</div><div><span style=\"font-size: 3rem;\">(28-Al-Qasas : 22)</span><br></div><div><br></div><div>39</div><div>رَبِّ إِنِّى لِمَآ أَنزَلْتَ إِلَىَّ مِنْ خَيْرٍ فَقِيرٌ</div><div><span style=\"font-size: 3rem;\">(28-Al-Qasas : 24)</span><br></div><div><br></div><div>40</div><div>رَبِّ ٱنصُرْنِى عَلَى ٱلْقَوْمِ ٱلْمُفْسِدِينَ</div><div><span style=\"font-size: 3rem;\">(29-Al-Ankabut : 30)</span><br></div><div><br></div><div>41</div><div>رَبِّ هَبْ لِيْ مِنَ&nbsp; الصّٰلِحِيْنَ&nbsp;</div><div><span style=\"font-size: 3rem;\">(37-As-Saffat : 100)</span><br></div><div><br></div><div>42</div><div>رَبِّ أَوْزِعْنِىٓ أَنْ أَشْكُرَ نِعْمَتَكَ ٱلَّتِىٓ أَنْعَمْتَ عَلَىَّ وَعَلَىٰ وَٰلِدَىَّ وَأَنْ أَعْمَلَ صَٰلِحًا تَرْضٰٮهُ وَأَصْلِحْ لِى فِى ذُرِّيَّتِىٓ ۖ إِنِّى تُبْتُ إِلَيْكَ وَإِنِّى مِنَ ٱلْمُسْلِمِينَ</div><div><span style=\"font-size: 3rem;\">(46-Al-Ahqaf : 15)</span><br></div><div><br></div><div>43</div><div>رَبَّنَا ٱغْفِرْ لَنَا وَلِإِخْوَٰنِنَا ٱلَّذِينَ سَبَقُونَا بِٱلْإِيمَٰنِ وَلَا تَجْعَلْ فِى قُلُوبِنَا غِلًّا لِّلَّذِينَ ءَامَنُوا۟ رَبَّنَآ إِنَّكَ رَءُوفٌ رَّحِيمٌ</div><div><span style=\"font-size: 3rem;\">(59-Al-Hashr : 10)</span><br></div><div><br></div><div>44</div><div>رَبَّنَا عَلَيْكَ تَوَكَّلْنَا وَإِلَيْكَ أَنَبْنَا وَإِلَيْكَ ٱلْمَصِيرُ</div><div><span style=\"font-size: 3rem;\">(60-Al-Mumtahina : 4)</span><br></div><div><br></div><div>45</div><div>رَبَّنَا لَا تَجْعَلْنَا فِتْنَةً لِّلَّذِينَ كَفَرُوا۟ وَٱغْفِرْ لَنَا رَبَّنَآ ۖ إِنَّكَ أَنتَ ٱلْعَزِيزُ ٱلْحَكِيمُ</div><div><span style=\"font-size: 3rem;\">(60-Al-Mumtahina : 5)</span><br></div><div><br></div><div>46</div><div>رَبَّنَآ أَتْمِمْ لَنَا نُورَنَا وَٱغْفِرْ لَنَآ&nbsp; ۖ&nbsp; إِنَّكَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ</div><div><span style=\"font-size: 3rem;\">(66-At-Tahrim : 8)</span><br></div><div><br></div><div>47</div><div>رَبِّ ٱغْفِرْ لِى وَلِوَٰلِدَىَّ وَلِمَن دَخَلَ بَيْتِىَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَٱلْمُؤْمِنَٰتِ</div><div><span style=\"font-size: 3rem;\">(71-Nuh : 28)</span><br></div><div><br></div><div>آمين</div><div><br></div><div><br></div></h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.co\">LEARN MORE</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.co\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rnMGaaUVjq",
+          "_anchor": "content4-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
